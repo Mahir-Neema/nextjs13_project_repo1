@@ -1,0 +1,21 @@
+.compl_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 20px 20px 5px;
+}
+
+.main_navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.navbar_list{
+    list-style-type: none;
+}
+
+.navbar_item{
+    display: inline;
+    margin: 0 10px 0 10px;
+}
