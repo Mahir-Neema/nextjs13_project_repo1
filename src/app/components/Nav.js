@@ -4,7 +4,7 @@ import styles from "../styles/navbar.css"
 
 const Nav = () => {
   return (
-    <nav className={styles.main_navbar}>
+    <nav className="main_navbar">
         <div>
             <ul className="navbar_list">
                 <li className='navbar_item'>

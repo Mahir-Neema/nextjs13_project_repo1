@@ -1,11 +1,12 @@
 // 
 
 import React from 'react'
+import MainPage from './components/MainPage';
 
 const Page = () => {
   return (
     <>
-      <h1>Next js Project</h1>
+      <MainPage/>
     </>
   )
 }

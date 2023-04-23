@@ -3,13 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 5px 20px 20px 5px;
+    border-bottom: 1px solid grey;
 }
 
-.main_navbar{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+/* .main_navbar{
+    
+} */
 
 .navbar_list{
     list-style-type: none;
