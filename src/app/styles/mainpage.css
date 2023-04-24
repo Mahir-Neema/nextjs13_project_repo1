@@ -1,7 +1,20 @@
+
 .mainpage_container{
-    background: url(https://img.freepik.com/free-vector/cinema-festival-movie-night-cartoon-flyers-set_107791-5035.jpg?w=1380&t=st=1682270938~exp=1682271538~hmac=da604548feee64f96b9b9237ed2fec0668d1d0be997216839cf17ab999933a5a);
-    height: 500px;
-    margin-left: 5%;
-    margin-right: 5%;
+    /* background: url(https://img.freepik.com/free-vector/movie-time-neon-sign-popcorn-bucket-clapperboard-film-reel-poster_1262-13530.jpg?w=1380&t=st=1682340184~exp=1682340784~hmac=02eb0d55c26ea3af02f3fd4d1981b854c7d3bb96bfbe022b83326c9b0c1ede39);
     background-repeat: no-repeat;
+    text-align: end;
+    align-items: center;
+    display: block; */
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background-size:contain;
+    opacity: 0.95;
+    height: 430px;
+}
+
+.watch_movie_btn{
+    border: none;
+    background-color: rgba(240, 248, 255, 0);
+    font-size: 25px;
+    cursor: pointer;
 }
