@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ["cdn.pixabay.com", "dog.ceo"]
+    domains: ["occ-0-3933-116.1.nflxso.net","cdn.pixabay.com", "dog.ceo"]
   }
 }
 
