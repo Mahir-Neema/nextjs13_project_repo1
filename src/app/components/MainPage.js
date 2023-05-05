@@ -7,7 +7,6 @@ const MainPage = () => {
     <main className='main_section'>
         <div className='mainpage_container'>
           <Link href="/movie" className='watch_movie_btn'>watch movie</Link>
-          
         </div>
     </main>
   )
