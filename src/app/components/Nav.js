@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import styles from "../styles/navbar.css"
+import "../styles/navbar.css"
 
 const Nav = () => {
   return (
