@@ -6,15 +6,27 @@
     border-bottom: 1px solid grey;
 }
 
-/* .main_navbar{
-    
-} */
 
-.navbar_list{
+.navbar_list li{
     list-style-type: none;
 }
+
 
 .navbar_item{
     display: inline;
     margin: 0 10px 0 10px;
+}
+
+.navbar_item a {
+    color: #000;
+    text-decoration: none; /* remove underline */
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar_item a:hover {
+    background-color: #000;
+    padding: 10px;
+    color: white
 }
