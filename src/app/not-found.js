@@ -2,7 +2,20 @@ import React from 'react'
 
 const Notfound = () => {
   return (
-    <div>not-found</div>
+    <div style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        height: '80vh', 
+        backgroundColor: 'white',
+        fontSize: '2rem',
+        fontWeight: 'bold',
+        color: '#333',
+        textAlign: 'center'
+      }}>
+        <p>Oops, something went wrong!</p>
+        <p>Error 404: Page not found</p>
+    </div>
   )
 }
 
