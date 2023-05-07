@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/mainpage.css'
 import Link from 'next/link'
 
+
 const MainPage = () => {
   return (
     <main className='main_section'>

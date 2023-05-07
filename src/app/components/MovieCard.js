@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
+import '../styles/MovieCard.css'
 
 const MovieCard = (currelem) => {
     const {id,type,title,synopsis} = currelem.jawSummary;
@@ -21,6 +22,7 @@ const MovieCard = (currelem) => {
                 </Link>
             </div>
         </div>
+        <br/>
     </>
   )
 }
