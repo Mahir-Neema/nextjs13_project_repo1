@@ -1,0 +1,45 @@
+/* Body */
+body {
+    background-color: #fff;
+    color: #111;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    width: 50%;
+    max-width: 700px;
+  }
+  
+  /* Movie Title */
+  .movie_title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .movie_title span {
+    color: #d1d1d1;
+  }
+
+  .card_section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .card_section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 50px;
+  }
+  

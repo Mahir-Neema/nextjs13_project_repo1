@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link'
-import React from 'react'
+import React from 'react';
+import '../../styles/dynamicMoviePage.css';
 
 const page = async({params}) => {
   const id = params.id;
@@ -20,12 +20,12 @@ const page = async({params}) => {
 
   return (
     <>
-        <h1>Dynamic root: {id}</h1>
+        {/* <h1>Dynamic root: {id}</h1> */}
         <div className='container'>
           <h2 className='movie_title'>Netflix \ <span>{movie_main_data.type}</span></h2>
           <div className='card_section'>
-            <div>
-              <Image src={movie_main_data.backgroundImage.url} alt={movie_main_data.title} width={600} height={600}/>
+            <div className='img_div'>
+              <Image src={movie_main_data.backgroundImage.url} alt={movie_main_data.title} width={250} height={250}/>
             </div>
             <div>
               <h1>{movie_main_data.title}</h1>
