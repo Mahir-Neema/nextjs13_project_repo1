@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Nav from './Nav'
-import styles from "../styles/navbar.css"
+import "../styles/navbar.css"
 
 const Header = () => {
   return (

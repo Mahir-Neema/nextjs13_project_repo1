@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
 
-const page = () => {
+const page = ({params}) => {
+  const id = params.id;
   return (
     <>
-        <h1>Dynamic root</h1>
+        <h1>Dynamic root: {id}</h1>
         
     </>
   )
