@@ -4,6 +4,10 @@ body{
 .movie_section{
     background-color: #e3e3ea;
 }
+.movie_container h1{
+    text-align: center;
+    font-size: 30px;
+}
 
 .moviecard_section{
     display: flex;
