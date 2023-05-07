@@ -12,8 +12,8 @@ const MovieCard = (currelem) => {
                 <Image src={currelem.jawSummary.backgroundImage.url} alt={title} width={250} height={200}/>
             </div>
             <div className='card_data'>
-                <h2>{title}</h2>
-                <p>{synopsis}</p>
+                <h2>{title.substring(0,20)}</h2>
+                <p>{synopsis.substring(0,65)}</p>
 
                 <Link href={`/movie/${id}`}>
                     <button>
