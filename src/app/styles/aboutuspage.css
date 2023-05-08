@@ -1,0 +1,22 @@
+.about-us {
+    background-color: #e3e3ea;
+    color: #353535;
+    padding: 50px;
+  }
+  
+  .about-us__title {
+    color: #fbc119;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  
+  .about-us__description {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .about-us__description:last-of-type {
+    margin-bottom: 0;
+  }
+  
