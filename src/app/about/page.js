@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/aboutuspage.css';
+import Link from 'next/link';
 
 const page = () => {
   return (
@@ -38,6 +39,11 @@ const page = () => {
           like never before.
         </p>
       </div>
+      <Link href="/query">
+        <button>
+          Contact Us
+        </button>
+      </Link>
     </div>
     </>
   )

@@ -13,6 +13,7 @@
 .about-us__content {
   opacity: 0;
   animation: slide-in 1s forwards;
+  margin-bottom: 20px;
 }
 
 .about-us__description {
@@ -36,3 +37,19 @@
   }
 }
   
+
+button {
+  background-color: #21ae8c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: auto;
+}
+
+button:hover {
+  background-color: #188c6c;
+}
