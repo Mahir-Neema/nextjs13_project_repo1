@@ -10,6 +10,8 @@ const ContactCard = () => {
     message:""
   });
 
+  const [stats,setstats] = useState("");
+
   function handlechange(e){
     const name = e.target.name;
     const value = e.target.value;
@@ -30,6 +32,18 @@ const ContactCard = () => {
         })
       }catch(e){
           console.log(e);
+      }
+
+      if(response.status==200){
+        setUser({
+          username:"",
+          email:"",
+          phone:"",
+          message:""
+        })
+        setstats("success");
+      }else{
+        setstats("error")
       }
   }
 
@@ -52,6 +66,8 @@ const ContactCard = () => {
         </div>
         <button className='submit_btn' onClick={handleSubmit} type='submit'>Submit</button>
       </form>
+      {stats==="success" && <p>Thanks you for your message. We will contact you as soon as possible.</p>}
+      {stats==="error" && <p>Error Occured while submitting form.</p>}
     </div>
   )
 }
