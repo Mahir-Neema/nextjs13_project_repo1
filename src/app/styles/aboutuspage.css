@@ -1,0 +1,55 @@
+.about-us {
+  background-color: #e3e3ea;
+  color: #4e4e4e;
+  padding: 50px;
+}
+
+.about-us__title {
+  color: #fbc119;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.about-us__content {
+  opacity: 0;
+  animation: slide-in 1s forwards;
+  margin-bottom: 20px;
+}
+
+.about-us__description {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-us__description:last-of-type {
+  margin-bottom: 0;
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  
+
+button {
+  background-color: #21ae8c;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.2s ease-in-out;
+  margin-top: auto;
+}
+
+button:hover {
+  background-color: #188c6c;
+}
