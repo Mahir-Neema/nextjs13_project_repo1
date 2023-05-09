@@ -11,14 +11,26 @@ const ContactCard = () => {
   });
 
   function handlechange(e){
-      const name = e.target.name;
-      const value = e.target.value;
-
-      setUser((prevuser)=>({...prevuser,[name]:value}));
+    const name = e.target.name;
+    const value = e.target.value;
+    setUser((prevuser)=>({...prevuser,[name]:value}));
   }
 
-  function handleSubmit(){
-
+  const handleSubmit = async() =>{
+      try{
+        const response = await fetch('api/contact',{
+          method:'POST',
+          headers:{"Content_Type":"application/json"},
+          body: JSON.stringify({
+            username: user.username,
+            email: user.email,
+            phone: user.phone,
+            message: user.message
+          })
+        })
+      }catch(e){
+          console.log(e);
+      }
   }
 
   return (
