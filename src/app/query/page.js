@@ -1,9 +1,11 @@
 import React from 'react'
+import ContactCard from '../components/ContactCard'
 
 const query = () => {
   return (
     <>
-        <h1>Query</h1>
+        {/* <h1>Any Query, Contact Us.</h1> */}
+        <ContactCard/>
     </>
   )
 }
