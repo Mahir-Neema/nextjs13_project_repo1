@@ -4,7 +4,7 @@ import '../styles/contactCard.css';
 
 const ContactCard = () => {
   const [user, setUser] = useState({
-    username:"mahir",
+    username:"",
     email:"",
     phone:"",
     message:""
@@ -18,7 +18,8 @@ const ContactCard = () => {
     setUser((prevuser)=>({...prevuser,[name]:value}));
   }
 
-  const handleSubmit = async() =>{
+  const handleSubmit = async(e) =>{
+      e.preventDefault();
       try{
         const response = await fetch('api/contact',{
           method:'POST',
@@ -30,20 +31,19 @@ const ContactCard = () => {
             message: user.message
           })
         })
+          if(response.status==200){
+            setUser({
+              username:"",
+              email:"",
+              phone:"",
+              message:""
+            })
+            setstats("success");
+          }else{
+            setstats("error")
+          }
       }catch(e){
           console.log(e);
-      }
-
-      if(response.status==200){
-        setUser({
-          username:"",
-          email:"",
-          phone:"",
-          message:""
-        })
-        setstats("success");
-      }else{
-        setstats("error")
       }
   }
 
