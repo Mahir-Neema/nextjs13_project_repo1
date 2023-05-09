@@ -4,7 +4,7 @@ import '../styles/contactCard.css';
 const ContactCard = () => {
   return (
     <div className="center">
-      <div className="contact-card">
+      <form className="contact-card">
         <h2 className="contact-name">Contact Us</h2>
         <div className="contact-info">
           <label for="fname" className="contact-label">Name</label>
@@ -19,7 +19,8 @@ const ContactCard = () => {
           <label for="message" className="contact-label">Message</label>
           <textarea className="contact-textarea" placeholder='Message' id="message" type='text' />
         </div>
-      </div>
+        <button className='submit_btn'>Submit</button>
+      </form>
     </div>
   )
 }
