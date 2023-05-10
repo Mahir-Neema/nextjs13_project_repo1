@@ -39,18 +39,25 @@ const ContactCard = () => {
               message:""
             })
             setstats("success");
+            setTimeout(()=>{
+              setstats("");
+            },3000);
           }else{
-            setstats("error")
+            setstats("error");
+            setTimeout(()=>{
+              setstats("");
+            },3000);
           }
       }catch(e){
           console.log(e);
       }
   }
 
-  return (
+  return (<>
     <div className="center">
       <form className="contact-card" onSubmit={handleSubmit}>
         <h2 className="contact-name">Contact Us</h2>
+        
         <div className="contact-info">
           <label for="fname" className="contact-label">Name</label>
           <input className="contact-input" placeholder='Name' id="fname" type='text' name="username" value={user.username} onChange={handlechange}/>
@@ -65,10 +72,11 @@ const ContactCard = () => {
           <textarea className="contact-textarea" placeholder='Message' id="message" type='text' name="message" value={user.message} onChange={handlechange}/>
         </div>
         <button className='submit_btn' onClick={handleSubmit} type='submit'>Submit</button>
-        {stats==="success" && <p style={{backgroundColor:"green",color:"white",padding:"10px"}}>Thanks you for your message. We will contact you as soon as possible.</p>}
-        {stats==="error" && <p style={{backgroundColor:"#f44336",color:"white",padding:"10px"}}>Error Occured while submitting form.</p>}
+        {stats==="success" && <p style={{backgroundColor:"green"}} className='alert'>Thanks you for your message. We will contact you as soon as possible.</p>}
+        {stats==="error" && <p style={{backgroundColor:"#f44336"}} className='alert'>Error Occured while submitting form.</p>}
       </form>
     </div>
+    </>
   )
 }
 

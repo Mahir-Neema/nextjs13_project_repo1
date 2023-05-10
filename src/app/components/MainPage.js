@@ -22,16 +22,16 @@ const MainPage = () => {
         <h2 className="featured__title">Featured Movies</h2>
         <div className="featured__movies">
           <div className="featured__movie">
-            <img src="/movie1.jpg" alt="Movie 1" />
-            <h3 className="featured__movie-title">Movie 1</h3>
+            <img src="https://cdn.pixabay.com/photo/2022/06/21/06/13/the-wasp-7275216_960_720.jpg" alt="Movie 1" />
+            <h3 className="featured__movie-title">Ant-Man and the Wasp</h3>
           </div>
           <div className="featured__movie">
-            <img src="/movie2.jpg" alt="Movie 2" />
-            <h3 className="featured__movie-title">Movie 2</h3>
+            <img src="https://w0.peakpx.com/wallpaper/537/108/HD-wallpaper-spider-man-ultra-games-other-games-superhero-marvel-spiderman-videogame-milesmorales.jpg" alt="Movie 2" />
+            <h3 className="featured__movie-title">Spiderman</h3>
           </div>
           <div className="featured__movie">
-            <img src="/movie3.jpg" alt="Movie 3" />
-            <h3 className="featured__movie-title">Movie 3</h3>
+            <img src="https://w0.peakpx.com/wallpaper/761/551/HD-wallpaper-harry-potter-harry-potter-and-the-philosopher-s-stone.jpg" alt="Movie 3" />
+            <h3 className="featured__movie-title">Harry Potter and the philosopher stone</h3>
           </div>
         </div>
       </section>
